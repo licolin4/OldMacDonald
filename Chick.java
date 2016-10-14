@@ -3,9 +3,16 @@ class Chick implements Animal
      //your code here
 	 private String myType;     
      private String mySound;      
-     public Chick(String type, String sound)     {         
+     public Chick(String type, String sound1 , String sound2)     {         
          myType = type;         
-         mySound = sound;     
+         if (Math.random() < 0.5)
+         {
+         	mySound = sound1;
+         }
+         else
+         {
+         	mySound = sound2;
+         }     
      }     
      public Chick()     {         
          myType = "unknown";         
